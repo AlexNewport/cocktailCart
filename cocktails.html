@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail Menu</title>
+    <style>
+      .menuBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+        border: 5px solid silver;
+        align-self: center;
+        margin-left: 15%;
+        background-color: rgb(20, 20, 20);
+      }
+      .cocktailWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .cocktailBox {
+        flex: 0 0 146px;
+        height: 400px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: xx-large;
+        color: palegoldenrod;
+        box-sizing: border-box;
+        padding: 2px;
+        font-size: medium;
+      }
+      button {
+        background-color: #990000;
+        color: rgb(239, 208, 162);
+        font-size: larger;
+      }
+      h1 {
+        width: 100%;
+        background-color: rgb(48, 48, 48);
+        color: plum;
+        text-align: center;
+        font-size: xx-large;
+      }
+      h7 {
+        width: 100%;
+        background-color: rgb(145, 145, 145);
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .cocktailPic {
+        width: 85px;
+        height: 116px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid lavender;
+      }
+    </style>
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <script src="cocktails.js"></script>
+  </head>
+  <body style="background-color: lightcoral;">
+    <div class="menuBox">
+      <h1>Digital Cocktail Menu</h1>
+      <h7>Click an image to see it's calories, mouse over for it for the secret recipie</h7>
+      <br>
+      <div class="cocktailWrapper">
+        <div class="cocktailBox">
+          <img class="cocktailPic" src="./images/craberryMimosa.jpg" />
+          <p class="cocktail"></p>
+          <p class="cocktailLower"></p>
+        </div>
+        <div class="cocktailBox">
+          <img class="cocktailPic" src="./images/hotButteredRum.jpg" />
+          <p class="cocktail"></p>
+          <p class="cocktailLower"></p>
+        </div>
+        <div class="cocktailBox">
+          <img class="cocktailPic" src="./images/chocolateMartini.jpg" />
+          <p class="cocktail"></p>
+          <p class="cocktailLower"></p>
+        </div>
+        <div class="cocktailBox">
+          <img class="cocktailPic" src="./images/jackFrost.jpg" />
+          <p class="cocktail"></p>
+          <p class="cocktailLower"></p>
+        </div>
+        <div class="cocktailBox">
+          <img class="cocktailPic" src="./images/moscowMule.png"/>
+          <p class="cocktail"></p>
+          <p class="cocktailLower"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
